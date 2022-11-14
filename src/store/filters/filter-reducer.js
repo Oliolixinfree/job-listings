@@ -6,7 +6,11 @@ export const filterReducer = (state = [], action) => {
       return [];
     }
     case ADD_FILTER: {
-      return [...state, action.filter];
+      if (!state.includes(action.filter)) {
+        return [...state, action.filter];
+      }
+
+      return state;
     }
     case REMOVE_FILTER: {
       return state.filter((item) => item !== action.filter);
