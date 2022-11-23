@@ -1,4 +1,4 @@
-import { FilterPanel } from 'components/FilterPanel';
+import { FilterPanel } from 'features/filter/FilterPanel';
 import { JobList } from 'components/JobList';
 import { TheHeader } from 'components/TheHeader';
 import { useEffect } from 'react';
